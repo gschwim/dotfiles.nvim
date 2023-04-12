@@ -1,4 +1,5 @@
-# kickstart.nvim
+# dotfiles.nvim
+__gschwim__
 
 ### Introduction
 
