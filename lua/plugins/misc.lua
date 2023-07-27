@@ -8,6 +8,9 @@ return {
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
 
+  -- undotree
+  'mbbill/undotree',
+
   -- Useful plugin to show you pending keybinds.
   { 'folke/which-key.nvim', opts = {} },
 
