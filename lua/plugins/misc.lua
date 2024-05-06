@@ -52,4 +52,7 @@ return {
 
   -- integration with tmux navigation
   'christoomey/vim-tmux-navigator',
+
+  -- OSC52 integration for clipboard
+  'ojroques/nvim-osc52',
 }
