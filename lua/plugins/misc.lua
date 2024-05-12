@@ -23,11 +23,12 @@ return {
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help indent_blankline.txt`
+    event = { "BufReadPre", "BufNewFile" },
     main = "ibl",
     opts = {
-      indent = { highlight = { "CursorColumn", "Whitespace" }, char = "▏" },
-      -- indent = { char = '┊'},
-      whitespace = { highlight = { "Whitespace", "NonText" } },
+      -- indent = { highlight = { "CursorColumn", "Whitespace" }, char = "▏" },
+      indent = { char = '┊'},
+      -- whitespace = { highlight = { "Whitespace", "NonText" } },
       -- show_trailing_blankline_indent = false,
     },
   },
