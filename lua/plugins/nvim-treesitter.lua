@@ -2,6 +2,8 @@
 return {
 
   { -- Highlight, edit, and navigate code
+    event = { "BufReadPre", "BufNewFile" },
+    build = ":TSUpdate",
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
       'nvim-treesitter/nvim-treesitter-textobjects',
