@@ -21,7 +21,10 @@ return {
 
 
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
+  { 'numToStr/Comment.nvim',
+    event = { "BufReadPre", "BufNewFile "},
+      opts = {}
+  },
 
 
   { -- Adds git releated signs to the gutter, as well as utilities for managing changes
