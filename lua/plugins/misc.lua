@@ -45,5 +45,12 @@ return {
   'christoomey/vim-tmux-navigator',
 
   -- OSC52 integration for clipboard
-  'ojroques/nvim-osc52',
+  { 'ojroques/nvim-osc52',
+    config = function()
+      require('osc52').setup({
+        tmux_passthrough = true,
+      })
+    end,
+  },
+
 }
