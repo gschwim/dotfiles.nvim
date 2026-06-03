@@ -74,7 +74,7 @@ return {
    },
 
   config = function(_, opts)
-      require('nvim-treesitter.configs').setup(opts)
+      require('nvim-treesitter.config').setup(opts)
     end,
     -- config = function()
     --   pcall(require('nvim-treesitter.install').update { with_sync = true })
